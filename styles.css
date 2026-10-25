@@ -1,0 +1,88 @@
+/* Grande bannière d'accueil */
+.hero {
+  background: linear-gradient(135deg, #6d28d9, #2563eb);
+  color: white;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero h1 { color: white; font-size: 2.5rem; }
+.hero p  { font-size: 1.2rem; margin-bottom: 0; }
+
+/* Cartes colorées avec effet au survol */
+.card-home {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+  height: 100%;
+}
+.card-home:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.card-home h3 { color: #6d28d9; }
+
+
+
+/* ---------- Page À propos ---------- */
+.profile-badges .badge {
+  font-size: .95rem;
+}
+
+
+/* Badge compteur de visiteurs, à DROITE dans la barre de navigation */
+.navbar .container-fluid { position: relative; }
+.navbar-visitors-badge {
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  pointer-events: none;
+}
+@media (max-width: 991px) {
+  .navbar-visitors-badge { display: none; }
+}
+
+/* Petit badge « nombre de téléchargements » à côté des liens PDF */
+.dl-count {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+
+.dl-count {
+  color: #6c757d;
+  font-size: 0.85em;
+  margin-left: 0.2em;
+  white-space: nowrap;
+}
+
+/* Justifier tous les paragraphes du site */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+
+
+/* Logo centré sur la page d'accueil */
+/* Logo en médaillon dans le bandeau d'accueil */
+.hero .grid { align-items: center; }
+.hero .g-col-md-7 { text-align: left; }
